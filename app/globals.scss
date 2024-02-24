@@ -1,0 +1,115 @@
+@import './variables.scss';
+
+:root {
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	max-width: 100vw;
+	overflow-x: hidden;
+	background-color: $main-bg-color;
+}
+
+body {
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.default_button {
+	color: white;
+	background: linear-gradient(96.7deg, #6B08EA 4.75%, #484AE5 28.19%, #3341E8 72.43%, #3E00EE 93.22%);
+	border-radius: 40px;
+	padding: 10px 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	font-size: 18px;
+}
+
+.header_button {
+	color: white;
+	background: linear-gradient(96.7deg, #6B08EA 4.75%, #484AE5 28.19%, #3341E8 72.43%, #3E00EE 93.22%);
+	border-radius: 40px;
+	padding: 10px 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	font-size: 16px;
+}
+
+.section_header {
+	text-align: center;
+	-webkit-text-fill-color: transparent;
+	background-image: linear-gradient(
+		rgba(255, 255, 255, 0.18) 5%,
+		rgba(185, 148, 250, 0.1) 50%
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	margin-top: 40px;
+	font-size: 150px;
+	font-weight: 600;
+	line-height: 250px;
+	text-transform: uppercase;
+}
+
+.rs-toggle-presentation:hover, .rs-toggle-presentation {
+	background-color: #640dfb !important;
+}
+
+.rs-toggle-lg .rs-toggle-presentation {
+	width: 75px;
+}
+
+.rs-picker-toggle.rs-btn.rs-btn-default,
+.rs-input-group-addon,
+.rs-input {
+	background: none !important;
+	background-color: transparent !important;
+}
+
+.rs-picker-has-value .rs-btn .rs-picker-toggle-value,
+.rs-picker-has-value .rs-picker-toggle .rs-picker-toggle-value {
+	color: white !important;
+}
+
+.rs-picker-popup {
+	background-color: #0a0019 !important;
+}
+
+.rs-picker-select-menu-item.rs-picker-select-menu-item-active {
+	color: white;
+	background-color: #47376c;
+}
+
+.rs-picker-select-menu-item,
+.rs-input-group-addon,
+.rs-input {
+	color: white !important;
+}
+
+.rs-picker-select-menu-item:hover {
+	color: white;
+}
+
+iframe#webpack-dev-server-client-overlay {
+	display: none !important;
+}
+
+.label,
+.intro,
+.desc {
+	font-size: 12px;
+	color: black;
+}
