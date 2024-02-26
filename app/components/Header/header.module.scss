@@ -23,6 +23,22 @@
 	background-image: linear-gradient(127.43deg, rgba(215, 237, 237, .08), rgba(204, 235, 235, .08));
 }
 
+.header_title {
+    text-align: center;
+    letter-spacing: 0px;
+    font-size: 3.4rem;
+    font-weight: 400;
+    line-height: 43px;
+}
+
+.header_subtitle {
+	color: #00ffeb;
+    letter-spacing: 0;
+    margin-top: 40px;
+    font-weight: 400;
+	font-size: 25px;
+}
+
 .desktop_video {
 	display: block;
 	position: absolute;
@@ -59,8 +75,8 @@
 	position: absolute;
 	z-index: 1;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-
 }

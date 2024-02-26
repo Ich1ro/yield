@@ -62,6 +62,7 @@ export default function Header() {
 						<br />
 						Renaissance Awaits
 					</h1>
+					<h4 className={styles.header_subtitle}>Earn The Highest Yields...Guaranteed!</h4>
 					<div className={styles.header_text}></div>
 				</div>
 			)}
