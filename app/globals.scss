@@ -27,7 +27,31 @@ a {
 
 .default_button {
 	color: white;
-	background: linear-gradient(96.7deg, #6B08EA 4.75%, #484AE5 28.19%, #3341E8 72.43%, #3E00EE 93.22%);
+	background: linear-gradient(
+		96.7deg,
+		#6b08ea 4.75%,
+		#484ae5 28.19%,
+		#3341e8 72.43%,
+		#3e00ee 93.22%
+	);
+	border-radius: 40px;
+	padding: 10px 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	font-size: 18px;
+}
+
+.golden_button {
+	color: black;
+	background: linear-gradient(
+		96.7deg,
+		#f2d995 4.75%,
+		#e6c360 28.19%,
+		#ddbb56 72.43%,
+		#d7b650 93.22%
+	);
 	border-radius: 40px;
 	padding: 10px 25px;
 	display: flex;
@@ -39,7 +63,13 @@ a {
 
 .header_button {
 	color: white;
-	background: linear-gradient(96.7deg, #6B08EA 4.75%, #484AE5 28.19%, #3341E8 72.43%, #3E00EE 93.22%);
+	background: linear-gradient(
+		96.7deg,
+		#6b08ea 4.75%,
+		#484ae5 28.19%,
+		#3341e8 72.43%,
+		#3e00ee 93.22%
+	);
 	border-radius: 40px;
 	padding: 10px 25px;
 	display: flex;
@@ -59,13 +89,14 @@ a {
 	-webkit-background-clip: text;
 	background-clip: text;
 	margin-top: 40px;
-	font-size: 150px;
+	font-size: 170px;
 	font-weight: 600;
 	line-height: 250px;
 	text-transform: uppercase;
 }
 
-.rs-toggle-presentation:hover, .rs-toggle-presentation {
+.rs-toggle-presentation:hover,
+.rs-toggle-presentation {
 	background-color: #640dfb !important;
 }
 
@@ -113,4 +144,25 @@ iframe#webpack-dev-server-client-overlay {
 .desc {
 	font-size: 12px;
 	color: black;
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+	top: 200px !important;
+}
+
+.swiper-pagination-bullet-active {
+	background: #b724ff;
+	width: 75px;
+	height: 5px;
+	border-radius: 15px;
+}
+
+.swiper-pagination-bullet {
+	background: #ffffff;
+	width: 30px;
+	height: 5px;
+	border-radius: 15px;
 }

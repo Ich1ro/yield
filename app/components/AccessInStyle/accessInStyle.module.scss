@@ -1,0 +1,30 @@
+.section {
+	width: 80%;
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+	color: white;
+}
+
+.video {
+	width: 350px;
+	height: 350px;
+	background-image: radial-gradient(circle farthest-corner at 50% 50%, #640dfb, rgba(255, 255, 255, 0) 66%);
+}
+
+.content {
+	max-width: 450px;
+}
+
+.header {
+    margin-bottom: 33px;
+    font-size: 52px;
+    line-height: 63px;
+	margin: 20px 0 50px 0;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 26px;
+	margin-bottom: 30px;
+}
