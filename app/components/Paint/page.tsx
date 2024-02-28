@@ -123,34 +123,38 @@ export default function Paint() {
 				<div className={styles.background}></div>
 				<div className={styles.eclipse}></div>
 				<div className={styles.eclipse_second}></div>
-				<div className={styles.eclipse_third}></div>
-				<div className={styles.dot}></div>
-				<div className={styles.dot_second}></div>
-				<div className={styles.left}>
-					<p className={styles.content_text}>
+				<div className={styles.eclipse_third}>
+					<div className={styles.dot}></div>
+					<div className={styles.underline}></div>
+					<p className={styles.content_first}>
 						No more searching for your wallet or mobile phone.
 					</p>
-					<p className={styles.content_text_wider}>
+					<div className={styles.dot_second}></div>
+					<div className={styles.underline_second}></div>
+					<p className={styles.content_second}>
 						NFC contactless payment works independently, no batteries, chargers,
 						or phones needed.
 					</p>
+					<div className={styles.dot_third}></div>
+					<div className={styles.underline_third}></div>
+					<p className={styles.content_third}>
+						Contactless payment with YIELD® saves time and is easy.
+					</p>
+					<div className={styles.dot_fourth}></div>
+					<div className={styles.underline_fourth}></div>
+					<p className={styles.content_fourth}>
+						Secure, Stylish, Hypoallergenic, and Waterproof.
+					</p>
 				</div>
+
+				<div className={styles.left}></div>
 				<div className={styles.video}>
 					<video className={styles.center} loop muted autoPlay playsInline>
 						<source src='/videos/band.mov' type='video/quicktime' />
 						<source src='/videos/band.webm' />
 					</video>
 				</div>
-				<div className={styles.right}>
-					<p className={styles.content_text}>
-						Contactless payment with YIELD® saves time and is easy.
-					</p>
-					<p className={styles.content_text}>
-						Secure, Stylish, Hypoallergenic, and Waterproof.
-					</p>
-				</div>
-				<div className={styles.dot_third}></div>
-				<div className={styles.dot_fourth}></div>
+				<div className={styles.right}></div>
 			</div>
 		</section>
 	);

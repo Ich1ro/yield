@@ -12,3 +12,13 @@
 	border-radius: 15px;
 	margin: 0 5px;
 }
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+	top: 200px !important;
+	display: flex;
+	position: absolute;
+	width: 100%;
+}
