@@ -8,7 +8,7 @@ export default function Crypto() {
 			<h1 className='section_header'>Crypto</h1>
 			<div className={styles.main}>
 				<video className={styles.video} loop autoPlay muted playsInline>
-					<source src='/videos/crypto.mov' />
+					<source src='/videos/crypto.mp4' />
 					<source src='/videos/crypto.webm' />
 				</video>
 				<div className={styles.content}>

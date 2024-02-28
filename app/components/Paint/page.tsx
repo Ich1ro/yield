@@ -58,7 +58,12 @@ export default function Paint() {
 						</p>
 					</div>
 					<div className={styles.running_line}>
-						<Image src='/images/charity.png' alt='icon' width={48} height={48} />
+						<Image
+							src='/images/charity.png'
+							alt='icon'
+							width={48}
+							height={48}
+						/>
 						<p className={styles.line_text}>
 							Yield Benefits- Insurance, Payroll & More!
 						</p>
@@ -119,6 +124,8 @@ export default function Paint() {
 				<div className={styles.eclipse}></div>
 				<div className={styles.eclipse_second}></div>
 				<div className={styles.eclipse_third}></div>
+				<div className={styles.dot}></div>
+				<div className={styles.dot_second}></div>
 				<div className={styles.left}>
 					<p className={styles.content_text}>
 						No more searching for your wallet or mobile phone.
@@ -142,6 +149,8 @@ export default function Paint() {
 						Secure, Stylish, Hypoallergenic, and Waterproof.
 					</p>
 				</div>
+				<div className={styles.dot_third}></div>
+				<div className={styles.dot_fourth}></div>
 			</div>
 		</section>
 	);

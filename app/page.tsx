@@ -12,6 +12,7 @@ import Wealth from './components/Wealth/page'
 import Mortgage from './components/Mortgage/page'
 import Crypto from './components/Crypto/page'
 import Community from './components/Community/page'
+import MobileApp from './components/MobileApp/page'
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       <Mortgage />
       <Crypto />
       <Community />
+      <MobileApp />
     </main>
   );
 }
