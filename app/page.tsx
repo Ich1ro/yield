@@ -13,6 +13,8 @@ import Mortgage from './components/Mortgage/page'
 import Crypto from './components/Crypto/page'
 import Community from './components/Community/page'
 import MobileApp from './components/MobileApp/page'
+import Security from './components/Security/page'
+import MoreInfo from './components/MoreInfo/page'
 
 export default function Home() {
   return (
@@ -30,6 +32,8 @@ export default function Home() {
       <Crypto />
       <Community />
       <MobileApp />
+      <Security />
+      {/* <MoreInfo /> */}
     </main>
   );
 }
