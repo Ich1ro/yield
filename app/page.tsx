@@ -15,6 +15,7 @@ import Community from './components/Community/page'
 import MobileApp from './components/MobileApp/page'
 import Security from './components/Security/page'
 import MoreInfo from './components/MoreInfo/page'
+import Footer from './components/Footer/page'
 
 export default function Home() {
   return (
@@ -33,7 +34,8 @@ export default function Home() {
       <Community />
       <MobileApp />
       <Security />
-      {/* <MoreInfo /> */}
+      <MoreInfo />
+      <Footer />
     </main>
   );
 }
