@@ -13,6 +13,10 @@
 	// background-repeat: no-repeat;
 	background-color: #1a0142;
 	overflow: hidden;
+
+	@media (max-width:950px) {
+		height: auto;
+	}
 }
 
 .background {
@@ -24,6 +28,10 @@
 	top: 549px;
 	background: #00ffeb;
 	filter: blur(162.1px);
+
+	@media (max-width:950px) {
+		top: 470px;
+	}
 }
 
 .eclipse {
@@ -33,8 +41,15 @@
 	height: 910px;
 	left: calc(50% - 910px / 2);
 	top: 393px;
-	border: 1px solid rgba(255, 255, 255, 0.18);
+	border: 1px solid rgba(255, 255, 255, 0.26);
 	border-radius: 50%;
+
+	@media (max-width: 1200px) {
+		width: 650px;
+		height: 650px;
+		left: calc(50% - 318px);
+		top: auto;
+	}
 }
 .eclipse_second {
 	// box-sizing: border-box;
@@ -52,6 +67,13 @@
 	// );
 	// border-image-slice: 1;
 	border-radius: 50%;
+
+	@media (max-width: 1200px) {
+		width: 500px;
+		height: 500px;
+		left: calc(50% - 245px);
+		top: auto;
+	}
 }
 .eclipse_third {
 	// box-sizing: border-box;
@@ -69,11 +91,57 @@
 	// );
 	// border-image-slice: 1;
 	border-radius: 50%;
+
+	@media (max-width: 1200px) {
+		width: 350px;
+		height: 350px;
+		left: calc(50% - 170px);
+		top: auto;
+	}
+
+	@media (max-width: 950px) {
+		display: none;
+	}
+}
+
+.eclipse_second, .eclipse {
+	@media (max-width:950px) {
+		display: none;
+	}
 }
 
 .left,
 .right {
-	width: 25%;
+	width: 30%;
+
+	@media (max-width: 950px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.first, .second, .third, .fourth {
+	display: none;
+	padding: 8px 12px;;
+	background-color: rgba(255, 255, 255, .21);
+	border-radius: 15px;
+
+	@media (max-width: 950px) {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		width: 200%;
+	}
+}
+
+.first {
+	margin: 30px 0;
+}
+
+.third, .fourth {
+	margin-bottom: 30px;
 }
 
 .line {
@@ -136,6 +204,11 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	@media (max-width: 950px) {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .content_text {
@@ -165,6 +238,11 @@
 	// Adjust the position based on your design
 	left: calc(50% - 534px / 2);
 	top: 150px;
+
+	@media (max-width: 1200px) {
+		top: 90px;
+		left: calc(50% - 160px);
+	}
 }
 
 .dot_second {
@@ -177,6 +255,11 @@
 	// Adjust the position based on your design
 	left: calc(50% - 610px / 2);
 	top: 280px;
+
+	@media (max-width: 1200px) {
+		top: 190px;
+		left: calc(50% - 178px);
+	}
 }
 
 .dot_third {
@@ -189,6 +272,11 @@
 	// Adjust the position based on your design
 	left: calc(52% + 490px / 2);
 	top: 150px;
+
+	@media (max-width: 1200px) {
+		top: 90px;
+		left: calc(52% + 145px);
+	}
 }
 
 .dot_fourth {
@@ -201,6 +289,11 @@
 	// Adjust the position based on your design
 	left: calc(50% + 586px / 2);
 	top: 280px;
+
+	@media (max-width: 1200px) {
+		top: 190px;
+		left: calc(50% + 168px);
+	}
 }
 
 .underline,
@@ -223,6 +316,11 @@
 		#00ffeb 100%,
 		transparent 100%
 	);
+
+	@media (max-width: 1200px) {
+		left: calc(50% - 534px / 2 - 190px);
+		top: 94px;
+	}
 }
 
 .underline_second {
@@ -236,6 +334,11 @@
 		#00ffeb 100%,
 		transparent 100%
 	);
+
+	@media (max-width: 1200px) {
+		left: calc(50% - 305px - 170px);
+		top: 194px;
+	}
 }
 
 .underline_third {
@@ -249,6 +352,11 @@
 		#00ffeb 100%,
 		transparent 100%
 	);
+
+	@media (max-width: 1200px) {
+		left: calc(52% + 300px / 2);
+		top: 94px;
+	}
 }
 
 .underline_fourth {
@@ -262,6 +370,11 @@
 		#00ffeb 100%,
 		transparent 100%
 	);
+
+	@media (max-width: 1200px) {
+		left: calc(50% + 170px);
+		top: 194px;
+	}
 }
 
 .content_first,
@@ -278,22 +391,42 @@
 	position: absolute;
 	left: calc(50% - 534px / 2 - 250px);
 	top: 109px;
+
+	@media (max-width: 1200px) {
+		left: calc(50% - 534px / 2 - 150px);
+		top: 47px;
+	}
 }
 
 .content_second {
 	position: absolute;
 	left: calc(50% - 610px / 2 - 270px);
 	top: 219px;
+
+	@media (max-width: 1200px) {
+		left: calc(50% - 610px / 2 - 150px );
+		top: 128px;
+	}
 }
 
 .content_third {
 	position: absolute;
 	left: calc(52% + 530px / 2);
 	top: 109px;
+
+	@media (max-width: 1200px) {
+		left: calc(52% + 170px);
+		top: 47px;
+	}
 }
 
 .content_fourth {
 	position: absolute;
 	left: calc(50% + 626px / 2);
 	top: 239px;
+
+	@media (max-width: 1200px) {
+		left: calc(52% + 190px);
+		top: 145px;
+	}
 }

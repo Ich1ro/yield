@@ -30,8 +30,8 @@ export default function MobileApp() {
 								className={styles.social}
 								src='/icons/apple.svg'
 								alt='social'
-								width={15}
-								height={18}
+								width={20}
+								height={20}
 							/>
 							<p>Apple Store</p>
 						</Button>
@@ -40,8 +40,8 @@ export default function MobileApp() {
 								className={styles.social}
 								src='/icons/playstore.svg'
 								alt='social'
-								width={15}
-								height={16}
+								width={22}
+								height={22}
 							/>
 							<p>Playstore</p>
 						</Button>

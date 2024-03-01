@@ -17,7 +17,7 @@ body {
 }
 
 body {
-	overflow-x: unset;
+	// overflow-x: unset;
 }
 
 a {
@@ -111,6 +111,56 @@ a {
 	line-height: 250px;
 	text-transform: uppercase;
 	z-index: 2;
+
+	@media (max-width: 1100px) {
+		line-height: 200px;
+		font-size: 160px;
+	}
+
+	@media (max-width: 1000px) {
+		line-height: 200px;
+		font-size: 155px;
+	}
+
+	@media (max-width: 860px) {
+		line-height: 200px;
+		font-size: 150px;
+	}
+
+	@media (max-width: 770px) {
+		line-height: 150px;
+		font-size: 110px;
+	}
+
+	@media (max-width: 700px) {
+		line-height: 150px;
+		font-size: 100px;
+	}
+
+	@media (max-width: 600px) {
+		line-height: 130px;
+		font-size: 90px;
+	}
+
+	@media (max-width: 650px) {
+		line-height: 130px;
+		font-size: 85px;
+	}
+
+	@media (max-width: 500px) {
+		line-height: 110px;
+		font-size: 75px;
+	}
+
+	@media (max-width: 400px) {
+		line-height: 110px;
+		font-size: 60px;
+	}
+
+	@media (max-width: 350px) {
+		line-height: 110px;
+		font-size: 50px;
+	}
 }
 
 .rs-toggle-presentation:hover,

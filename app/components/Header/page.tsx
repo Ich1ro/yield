@@ -7,6 +7,7 @@ import Image from 'next/image'
 
 export default function Header() {
 	const [showText, setShowText] = useState(false);
+	const [isBurger, setIsBurger] = useState(false)
 
 	return (
 		<header className={styles.header}>
@@ -36,6 +37,11 @@ export default function Header() {
 					</Link>
 				</div>
 				<Button className='header_button'>Join the Waitlist</Button>
+				<div className={styles.burger} onClick={() => setIsBurger(!isBurger)}>
+					<span className={`${isBurger ? styles.first : ''}`}></span>
+					<span className={`${isBurger ? styles.second : ''}`}></span>
+					<span className={`${isBurger ? styles.third : ''}`}></span>
+				</div>
 			</nav>
 			<video
 				className={styles.desktop_video}

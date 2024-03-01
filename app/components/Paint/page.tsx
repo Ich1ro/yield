@@ -147,14 +147,29 @@ export default function Paint() {
 					</p>
 				</div>
 
-				<div className={styles.left}></div>
+				<div className={styles.left}>
+					<p className={styles.first}>
+						No more searching for your wallet or mobile phone.
+					</p>
+					<p className={styles.second}>
+						NFC contactless payment works independently, no batteries, chargers,
+						or phones needed.
+					</p>
+				</div>
 				<div className={styles.video}>
 					<video className={styles.center} loop muted autoPlay playsInline>
 						<source src='/videos/band.mov' type='video/quicktime' />
 						<source src='/videos/band.webm' />
 					</video>
 				</div>
-				<div className={styles.right}></div>
+				<div className={styles.right}>
+					<p className={styles.third}>
+						Contactless payment with YIELD® saves time and is easy.
+					</p>
+					<p className={styles.fourth}>
+						Secure, Stylish, Hypoallergenic, and Waterproof.
+					</p>
+				</div>
 			</div>
 		</section>
 	);

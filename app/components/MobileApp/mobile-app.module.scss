@@ -28,12 +28,25 @@
 	width: 386px;
 	height: 96px;
 	margin-bottom: 30px;
+
+	@media (max-width: 415px) {
+		width: 300px;
+	}
 }
 
 .buttons {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+
+	@media (max-width: 415px) {
+		flex-direction: column;
+		align-items: center;
+
+		> button:first-child {
+			margin-bottom: 20px;
+		}
+	}
 }
 
 .social {
@@ -44,6 +57,11 @@
 	position: relative;
 	width: 100%;
 	color: white;
+
+	@media (max-width: 405px) {
+		width: 300px;
+		margin-bottom: 50px;
+	}
 }
 
 .swiper {
@@ -57,19 +75,23 @@
 	max-height: 616px;
 }
 
-.prev, .next {
+.prev,
+.next {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
 	max-width: 42px;
-	border: 1px solid #640DFB;
+	border: 1px solid #640dfb;
 	border-radius: 50%;
+
+	@media (max-width: 405px) {
+		bottom: -60px;
+		top: auto;
+	}
 }
 
 .card {
 	display: flex;
 	justify-content: center;
-
-	
 }

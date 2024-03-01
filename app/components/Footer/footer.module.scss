@@ -4,16 +4,50 @@
 	justify-content: center;
 	padding: 75px 0;
 	color: white;
+
+	@media (max-width: 825px) {
+		padding-bottom: 30px;
+	}
 }
 
 .main {
 	width: 100%;
 	max-width: 1100px;
+
+	@media (max-width: 1200px) {
+		max-width: 900px;
+	}
+
+	@media (max-width: 925px) {
+		max-width: 750px;
+	}
+
+	@media (max-width: 815px) {
+		max-width: 500px;
+	}
+
+	@media (max-width: 530px) {
+		max-width: 90%;
+	}
 }
 
 .headers {
 	display: flex;
 	margin-bottom: 50px;
+
+	> h3:last-child {
+		margin-right: 0;
+	}
+
+	@media (max-width: 925px) {
+		width: 100%;
+		justify-content: center;
+	}
+
+	@media (max-width: 530px) {
+		flex-direction: column;
+		text-align: center;
+	}
 }
 
 .header {
@@ -22,6 +56,10 @@
 	line-height: 27px;
 	font-weight: 500;
 	text-transform: capitalize;
+
+	@media (max-width: 530px) {
+		margin-bottom: 10px;
+	}
 }
 
 .texts {
@@ -41,6 +79,10 @@
 	width: 2px;
 	background-color: #241C30;
 	margin: 0 25px 0 10px;
+
+	@media (max-width: 630px) {
+		display: none;
+	}
 }
 
 .text {
@@ -57,16 +99,34 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
+	@media (max-width: 825px) {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
 }
 
 .else {
 	display: flex;
 	align-items: center;
+
+	@media (max-width: 825px) {
+		margin-bottom: 30px;
+	}
+
+	@media (max-width: 630px) {
+		flex-direction: column;
+	}
 }
 
 .icons {
 	display: flex;
 	align-items: center;
+
+	@media (max-width: 630px) {
+		margin-bottom: 20px;
+	}
 }
 
 .icon {
@@ -83,6 +143,14 @@
 
 	> button:first-child {
 		margin-right: 10px;
+	}
 
+	@media (max-width: 385px) {
+		flex-direction: column;
+
+		> button:first-child {
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
 	}
 }

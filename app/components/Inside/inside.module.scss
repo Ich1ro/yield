@@ -5,6 +5,11 @@
 	color: white;
 	margin-top: 72px;
 	max-width: 1200px;
+
+	@media (max-width: 700px) {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
 }
 
 .left {
@@ -14,17 +19,35 @@
 	align-items: flex-start;
 	width: 100%;
 	max-width: 480px;
+
+	@media (max-width: 700px) {
+		align-items: center;
+	}
 }
 
 .header {
 	margin-bottom: 33px;
     font-size: 52px;
     line-height: 63px;
+
+	@media (max-width: 700px) {
+		text-align: center;
+	}
 }
 
 .right { 
 	width: 568px;
 	height: 568px;
+
+	@media (max-width: 900px) {
+		width: 50%;
+		height: auto;
+	}
+
+	@media (max-width: 700px) {
+		width: 90%;
+		height: auto;
+	}
 }
 
 .slider {
@@ -45,6 +68,4 @@
 	max-width: 280px;
 }
 
-.details {
-}
 

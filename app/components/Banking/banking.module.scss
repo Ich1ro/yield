@@ -5,6 +5,10 @@
 	align-items: center;
 	color: white;
 	padding-bottom: 150px;
+	
+	@media (max-width: 1025px) {
+		width: 98%;
+	}
 }
 
 .title {
@@ -16,6 +20,15 @@
 	font-weight: bold;
 	margin-top: -100px;
 	margin-bottom: 10px;
+	
+	@media (max-width: 1025px) {
+		margin-top: -30px;
+	}
+	
+	@media (max-width: 450px) {
+		font-size: 35px;
+		line-height: 40px;
+	}
 }
 
 .subtitle {
@@ -41,6 +54,22 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	@media (max-width: 780px) {
+		width: 40%;
+	}
+
+	@media (max-width: 585px) {
+		width: 50%;
+	}
+
+	@media (max-width: 460px) {
+		width: 65%;
+	}
+
+	@media (max-width: 350px) {
+		width: 75%;
+	}
 }
 
 .cards {
@@ -66,11 +95,21 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
+	@media (max-width: 660px) {
+		flex-direction: column;
+	}
 }
 
 .card_header {
 	display: flex;
 	flex-direction: column;
+	
+	@media (max-width: 660px) {
+		flex-direction: column;
+		margin-bottom: 25px;
+		text-align: center;
+	}
 }
 
 .name {
@@ -88,12 +127,23 @@
 	display: flex;
 	justify-content: space-between;
 	// align-items: baseline;
+
+	@media (max-width: 450px) {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
 }
 
 .price_block {
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
+	
+	@media (max-width: 450px) {
+		margin-bottom: 25px;
+		text-align: center;
+	}
 }
 
 .cost {
@@ -110,6 +160,9 @@
 	font-size: 12px;
 	font-weight: 700;
 
+	@media (max-width: 450px) {
+		margin-right: 0;
+	}
 }
 
 .right {
@@ -118,6 +171,11 @@
 	height: 100%;
 	display: flex;
 	justify-content: space-between;
+
+	@media (max-width: 700px) {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .details {
@@ -137,6 +195,10 @@
 .details_first,
 .details_second {
 	width: 50%;
+
+	@media (max-width: 700px) {
+		width: 100%;
+	}
 }
 
 .details_first .details:first-child {
