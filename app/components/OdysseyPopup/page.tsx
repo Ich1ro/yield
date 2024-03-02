@@ -11,7 +11,7 @@ import './input.css';
 import { Button } from '../ui/buttons';
 import Image from 'next/image';
 
-export default function OdysseyPopup(handleClose: () => void) {
+export default function OdysseyPopup({handleClose}: any) {
 	const [phone, setPhone] = useState('');
 	const [deposit, setDeposit] = useState('100,000');
 	const [termState, setTermState] = useState('5');
@@ -37,7 +37,7 @@ export default function OdysseyPopup(handleClose: () => void) {
 			<div className={styles.header_wrapper}>
 				<div className={styles.empty}></div>
 				<div className={styles.header}>Odyssey Concierge Request</div>
-				<div className={styles.close} onClick={() => handleClose()}>
+				<div className={styles.close} onClick={handleClose}>
 					<Image
 						src='/icons/close.svg'
 						alt='close'

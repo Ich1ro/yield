@@ -7,7 +7,7 @@ import { Button } from '../ui/buttons';
 import { PhoneInput } from 'react-international-phone';
 import { useState } from 'react';
 
-export default function JoinPopup(handleClose: () => void) {
+export default function JoinPopup({handleClose}: any) {
 	const [phone, setPhone] = useState('');
 
 	return (
