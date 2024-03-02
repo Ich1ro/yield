@@ -3,16 +3,29 @@ import { useState, useEffect } from 'react';
 import styles from './header.module.scss';
 import Link from 'next/link';
 import { Button } from '../ui/buttons';
-import Image from 'next/image'
+import Image from 'next/image';
+import Burger from '../Burger/page';
 
 export default function Header() {
 	const [showText, setShowText] = useState(false);
-	const [isBurger, setIsBurger] = useState(false)
+	const [isBurger, setIsBurger] = useState(false);
+
+	useEffect(() => {
+		if (isBurger) {
+			document.body.classList.add('overflow-hidden');
+		} else {
+			document.body.classList.remove('overflow-hidden');
+		}
+
+		return () => {
+			document.body.classList.remove('overflow-hidden');
+		};
+	}, [isBurger]);
 
 	return (
 		<header className={styles.header}>
 			<nav className={styles.nav}>
-				<Image src='/main-logo.png' alt='main logo' width={114} height={28}/>
+				<Image src='/main-logo.png' alt='main logo' width={114} height={28} />
 				<div className={styles.links}>
 					<Link href='' className={styles.nav_item}>
 						Banking
@@ -43,6 +56,7 @@ export default function Header() {
 					<span className={`${isBurger ? styles.third : ''}`}></span>
 				</div>
 			</nav>
+				{isBurger && <Burger />}
 			<video
 				className={styles.desktop_video}
 				autoPlay
@@ -68,7 +82,9 @@ export default function Header() {
 						<br />
 						Renaissance Awaits
 					</h1>
-					<h4 className={styles.header_subtitle}>Earn The Highest Yields...Guaranteed!</h4>
+					<h4 className={styles.header_subtitle}>
+						Earn The Highest Yields...Guaranteed!
+					</h4>
 					<div className={styles.header_text}></div>
 				</div>
 			)}

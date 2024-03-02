@@ -95,6 +95,7 @@ export default function MoreInfo() {
 						<input type='email' placeholder='example123@gmai.com'/>
 						<div className={styles.title}>Phone Number</div>
 						<PhoneInput
+						className='phone'
 							defaultCountry='us'
 							value={phone}
 							onChange={phone => setPhone(phone)}

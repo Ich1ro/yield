@@ -90,8 +90,7 @@ export default function Footer() {
 									width={22}
 									height={22}
 								/>
-							</div>
-							
+							</div>	
 						</div>
 						<div className={styles.line} />
 						<div className={styles.buttons}>

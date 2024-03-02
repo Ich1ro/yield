@@ -1,4 +1,5 @@
-import React, { useMemo, useState } from 'react';
+'use client';
+import React, { useEffect, useMemo, useState } from 'react';
 import styles from './banking.module.scss';
 import 'rsuite/Toggle/styles/index.css';
 import { Toggle } from 'rsuite';
@@ -6,8 +7,32 @@ import { cards } from '@/app/utils/data';
 import { Button } from '../ui/buttons';
 import Image from 'next/image';
 import Calculator from '../Calculator/page';
+import OdysseyPopup from '../OdysseyPopup/page';
 
 export default function Banking() {
+	const [form, setForm] = useState(false);
+
+	const handleClose = () => {
+		setForm(false);
+	};
+
+	const handleOpen = () => {
+		console.log(true);
+		setForm(true);
+	};
+
+	useEffect(() => {
+		if (form) {
+			document.body.classList.add('overflow-hidden');
+		} else {
+			document.body.classList.remove('overflow-hidden');
+		}
+
+		return () => {
+			document.body.classList.remove('overflow-hidden');
+		  };
+	}, [form]);
+
 	return (
 		<section id='banking' className={styles.section}>
 			<h1 className='section_header'>Banking</h1>
@@ -25,7 +50,7 @@ export default function Banking() {
 				<p>Annually</p>
 			</div>
 			<div className={styles.cards}>
-				{cards.map(card => (
+				{cards.map((card, index) => (
 					<div className={styles.card} key={card.accName}>
 						<div className={styles.left}>
 							<div className={styles.card_header}>
@@ -37,7 +62,16 @@ export default function Banking() {
 									<h5 className={styles.cost}>{card.costMonth}</h5>
 									<div className={styles.bill}>{card?.billMonth}</div>
 								</div>
-								<Button className='default_button'>Get Started</Button>
+								{index === cards.length - 1 ? (
+									<Button
+										className='default_button'
+										onClick={() => handleOpen()}
+									>
+										Get Started
+									</Button>
+								) : (
+									<Button className='default_button'>Get Started</Button>
+								)}
 							</div>
 						</div>
 						<div className={styles.line}></div>
@@ -79,6 +113,7 @@ export default function Banking() {
 					</div>
 				))}
 			</div>
+			{form ? <OdysseyPopup handleClose={handleClose} /> : null}
 			<h2 className={styles.header}>Calculate Your Yield</h2>
 			<p className={styles.subtitle}>
 				Select your account type, enter the amount you will deposit, select the
