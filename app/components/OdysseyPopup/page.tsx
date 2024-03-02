@@ -2,7 +2,7 @@
 
 import { PhoneInput } from 'react-international-phone';
 import styles from './odyssey.module.scss';
-import { useMemo, useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { Input, InputGroup, SelectPicker } from 'rsuite';
 import 'rsuite/SelectPicker/styles/index.css';
 import 'rsuite/InputNumber/styles/index.css';
@@ -11,11 +11,11 @@ import './input.css';
 import { Button } from '../ui/buttons';
 import Image from 'next/image';
 
-export default function OdysseyPopup({
-	handleClose,
-}: {
+interface PopupProps {
 	handleClose: () => void;
-}) {
+}
+
+const OdysseyPopup: React.FC<PopupProps> = ({ handleClose }) => {
 	const [phone, setPhone] = useState('');
 	const [deposit, setDeposit] = useState('100,000');
 	const [termState, setTermState] = useState('5');
@@ -196,4 +196,6 @@ export default function OdysseyPopup({
 			</form>
 		</div>
 	);
-}
+};
+
+export default OdysseyPopup;

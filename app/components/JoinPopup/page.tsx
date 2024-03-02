@@ -5,13 +5,13 @@ import styles from './join.module.scss';
 import { Input } from 'rsuite';
 import { Button } from '../ui/buttons';
 import { PhoneInput } from 'react-international-phone';
-import { useState } from 'react'
+import React, { useState } from 'react';
 
-export default function JoinPopup({
-	handleClose,
-}: {
+interface JoinPopupProps {
 	handleClose: () => void;
-}) {
+}
+
+const JoinPopup: React.FC<JoinPopupProps> = ({ handleClose }) => {
 	const [phone, setPhone] = useState('');
 
 	return (
@@ -49,3 +49,5 @@ export default function JoinPopup({
 		</div>
 	);
 }
+
+export default JoinPopup;
