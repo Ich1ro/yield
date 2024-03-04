@@ -1,9 +1,9 @@
-import { Button } from '../ui/buttons';
+import LinkToForm from '../LinkToForm/page'
 import styles from './spend.module.scss';
 
 export default function Spend() {
 	return (
-		<section className={styles.section}>
+		<section id='spend' className={styles.section}>
 			<h1 className='section_header'>Spend</h1>
 			<div className={styles.main}>
 				<div className={styles.video_wrapper}>
@@ -25,7 +25,7 @@ export default function Spend() {
 						Powerful digital banking perks to help fuel your long-term financial
 						strategy.
 					</p>
-					<Button className='default_button'>Join The Waitlist</Button>
+					<LinkToForm text='Join The Waitlist'/>
 				</div>
 			</div>
 		</section>

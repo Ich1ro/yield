@@ -16,7 +16,7 @@ export default function Inside() {
 	};
 
 	return (
-		<section className={styles.section}>
+		<section id='inside' className={styles.section}>
 			<div className={styles.left}>
 				<h1 className={styles.header}>{`The Platform, It\'s All Inside.`}</h1>
 				<Swiper

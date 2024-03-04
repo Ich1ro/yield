@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Button } from '../ui/buttons';
 import styles from './footer.module.scss';
+import Link from 'next/link'
 
 export default function Footer() {
 	return (
@@ -51,46 +52,46 @@ export default function Footer() {
 					<p className={styles.copy}>© Copyright 2023 Yield.Inc.</p>
 					<div className={styles.else}>
 						<div className={styles.icons}>
-							<div className={styles.icon}>
+							<Link href='https://twitter.com/Yield_Bnk' className={styles.icon} rel="noopener noreferrer" target="_blank">
 								<Image
 									src='/icons/x.svg'
 									alt='apple'
 									width={19}
 									height={17}
 								/>
-							</div>
-							<div className={styles.icon}>
+							</Link>
+							<Link href='https://www.linkedin.com/company/yield-bnk/about/' className={styles.icon}>
 								<Image
 									src='/icons/linkedin.svg'
 									alt='apple'
 									width={22}
 									height={22}
 								/>
-							</div>
-							<div className={styles.icon}>
+							</Link>
+							<Link href='https://www.youtube.com/@yield_bnk' className={styles.icon}>
 								<Image
 									src='/icons/youtube.svg'
 									alt='apple'
 									width={22}
 									height={22}
 								/>
-							</div>
-							<div className={styles.icon}>
+							</Link>
+							<Link href='https://www.facebook.com/yieldbnk' className={styles.icon}>
 								<Image
 									src='/icons/facebook.svg'
 									alt='apple'
 									width={22}
 									height={22}
 								/>
-							</div>
-							<div className={styles.icon}>
+							</Link>
+							<Link href='https://www.instagram.com/yield_bnk' className={styles.icon}>
 								<Image
 									src='/icons/instagram.svg'
 									alt='apple'
 									width={22}
 									height={22}
 								/>
-							</div>	
+							</Link>	
 						</div>
 						<div className={styles.line} />
 						<div className={styles.buttons}>

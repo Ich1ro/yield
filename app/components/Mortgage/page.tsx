@@ -4,7 +4,7 @@ import styles from './mortgage.module.scss';
 
 export default function Mortgage() {
 	return (
-		<section className={styles.section}>
+		<section id='mortgage' className={styles.section}>
 			<h1 className='section_header'>Mortgage</h1>
 			<div className={styles.main}>
 			<Image className={styles.mortgage} src='/images/mortgage.png' alt='image' width={0} height={0} sizes='100%' />

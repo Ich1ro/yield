@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import { Button } from '../ui/buttons';
 import styles from './crypto.module.scss';
+import LinkToForm from '../LinkToForm/page'
 
 export default function Crypto() {
 	return (
-		<section className={styles.section}>
+		<section id='crypto' className={styles.section}>
 			<h1 className='section_header'>Crypto</h1>
 			<div className={styles.main}>
 				<video className={styles.video} loop autoPlay muted playsInline>
@@ -53,7 +54,7 @@ export default function Crypto() {
 							your Yield account and available to spend.
 						</p>
 					</div>
-					<Button className='default_button'>Join The Waitlist</Button>
+					<LinkToForm text='Join The Waitlist'/>
 				</div>
 			</div>
 		</section>

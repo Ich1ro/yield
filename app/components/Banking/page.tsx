@@ -8,9 +8,11 @@ import { Button } from '../ui/buttons';
 import Image from 'next/image';
 import Calculator from '../Calculator/page';
 import OdysseyPopup from '../OdysseyPopup/page';
+import LinkToForm from '../LinkToForm/page'
 
 export default function Banking() {
 	const [form, setForm] = useState(false);
+	const [isAnnually, setIsAnnually] = useState(false);
 
 	const handleClose = () => {
 		setForm(false);
@@ -46,12 +48,12 @@ export default function Banking() {
 			<div className={styles.sub}>Subscriptions</div>
 			<div className={styles.plan}>
 				<p>Monthly</p>
-				<Toggle arial-label='Switch' size={'lg'} className={styles.toggle} />
+				<Toggle arial-label='Switch' size={'lg'} className={styles.toggle} onChange={() => setIsAnnually(!isAnnually)}/>
 				<p>Annually</p>
 			</div>
 			<div className={styles.cards}>
 				{cards.map((card, index) => (
-					<div className={styles.card} key={card.accName}>
+					<div className={isAnnually ? styles.annually : styles.card} key={card.accName}>
 						<div className={styles.left}>
 							<div className={styles.card_header}>
 								<h2 className={styles.name}>{card.accName}</h2>
@@ -59,8 +61,8 @@ export default function Banking() {
 							</div>
 							<div className={styles.cost_block}>
 								<div className={styles.price_block}>
-									<h5 className={styles.cost}>{card.costMonth}</h5>
-									<div className={styles.bill}>{card?.billMonth}</div>
+									<h5 className={styles.cost}>{isAnnually ? card.costAnn : card.costMonth}</h5>
+									<div className={styles.bill}>{isAnnually ? card?.billAnn : card?.billMonth}</div>
 								</div>
 								{index === cards.length - 1 ? (
 									<Button
@@ -70,7 +72,7 @@ export default function Banking() {
 										Get Started
 									</Button>
 								) : (
-									<Button className='default_button'>Get Started</Button>
+									<LinkToForm text='Get Started'></LinkToForm>
 								)}
 							</div>
 						</div>

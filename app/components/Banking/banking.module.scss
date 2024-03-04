@@ -78,16 +78,23 @@
 	margin-bottom: 100px;
 }
 
-.card {
+.card, .annually {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	background-image: linear-gradient(#50206b, #190c44);
 	border-radius: 20px;
 	justify-content: space-between;
 	padding: 30px 40px;
 	overflow: auto;
 	margin: 20px 0;
+}
+
+.annually {
+	background-image: linear-gradient(#190c44, #50206b);
+}
+
+.card {
+	background-image: linear-gradient(#50206b, #190c44);
 }
 
 .left {

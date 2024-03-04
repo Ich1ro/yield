@@ -30,7 +30,7 @@ export default function Community() {
 	}, [form]);
 
 	return (
-		<section className={styles.section}>
+		<section  id='community' className={styles.section}>
 			<h1 className='section_header'>Community</h1>
 			<Image
 				src='/images/community.png'

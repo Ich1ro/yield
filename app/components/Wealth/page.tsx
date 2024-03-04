@@ -1,10 +1,10 @@
 import Image from 'next/image';
-import { Button } from '../ui/buttons';
 import styles from './wealth.module.scss';
+import LinkToForm from '../LinkToForm/page'
 
 export default function Wealth() {
 	return (
-		<section className={styles.section}>
+		<section id='wealth' className={styles.section}>
 			<h1 className='section_header'>Wealth</h1>
 			<div className={styles.main}>
 				<div className={styles.left}>
@@ -61,7 +61,7 @@ export default function Wealth() {
 							</div>
 						</div>
 					</div>
-					<Button className='default_button'>Join The Waitlist</Button>
+					<LinkToForm text='Join The Waitlist'/>
 				</div>
 				<Image className={styles.wealth} src='/images/wealth.png' alt='image' width={0} height={0} sizes='100%' />
 			</div>

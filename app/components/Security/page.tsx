@@ -3,7 +3,7 @@ import styles from './security.module.scss';
 
 export default function Security() {
 	return (
-		<section className={styles.section}>
+		<section id='security' className={styles.section}>
 			<h1 className='section_header'>Security</h1>
 			<div className={styles.main}>
 				<div className={styles.card}>

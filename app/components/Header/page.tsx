@@ -5,10 +5,17 @@ import Link from 'next/link';
 import { Button } from '../ui/buttons';
 import Image from 'next/image';
 import Burger from '../Burger/page';
+import { useRouter } from 'next/navigation';
 
 export default function Header() {
 	const [showText, setShowText] = useState(false);
 	const [isBurger, setIsBurger] = useState(false);
+
+	const router = useRouter();
+
+	const handleClick = () => {
+		router.push('#more-info');
+	};
 
 	useEffect(() => {
 		if (isBurger) {
@@ -27,29 +34,29 @@ export default function Header() {
 			<nav className={styles.nav}>
 				<Image src='/main-logo.png' alt='main logo' width={114} height={28} />
 				<div className={styles.links}>
-					<Link href='' className={styles.nav_item}>
+					<Link href='#banking' className={styles.nav_item}>
 						Banking
 					</Link>
-					<Link href='' className={styles.nav_item}>
+					<Link href='#spend' className={styles.nav_item}>
 						Spend
 					</Link>
-					<Link href='' className={styles.nav_item}>
+					<Link href='#wealth' className={styles.nav_item}>
 						Wealth
 					</Link>
-					<Link href='' className={styles.nav_item}>
+					<Link href='#mortgage' className={styles.nav_item}>
 						Mortgage
 					</Link>
-					<Link href='' className={styles.nav_item}>
+					<Link href='#crypto' className={styles.nav_item}>
 						Crypto
 					</Link>
-					<Link href='' className={styles.nav_item}>
+					<Link href='#community' className={styles.nav_item}>
 						Community
 					</Link>
-					<Link href='' className={styles.nav_item}>
+					<Link href='#security' className={styles.nav_item}>
 						Security
 					</Link>
 				</div>
-				<Button className='header_button'>Join the Waitlist</Button>
+				<Button className='header_button' onClick={handleClick}>Join the Waitlist</Button>
 				<div className={styles.burger} onClick={() => setIsBurger(!isBurger)}>
 					<span className={`${isBurger ? styles.first : ''}`}></span>
 					<span className={`${isBurger ? styles.second : ''}`}></span>

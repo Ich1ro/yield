@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Paint() {
 	return (
-		<section className={styles.section}>
+		<section id='paint' className={styles.section}>
 			<div className={styles.main}>
 				<h1 className={styles.header}>Paint Your Financial Future</h1>
 				<p

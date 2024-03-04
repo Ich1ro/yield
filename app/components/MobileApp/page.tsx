@@ -12,7 +12,7 @@ import { Navigation } from 'swiper/modules';
 
 export default function MobileApp() {
 	return (
-		<section className={styles.section}>
+		<section id='mobile' className={styles.section}>
 			<div className={styles.main}>
 				<h1 className='section_header'>Mobile App</h1>
 				<div className={styles.info}>
