@@ -172,10 +172,12 @@ export default function Calc() {
 										className={styles.input_group}
 										value={interest}
 										onChange={e => {
-											if (+e >= 100) {
-												setInterest(100);
-											} else {
+											if (+e >= 20) {
+												setInterest(20);
+											} else if (+e > 0) {
 												setInterest(+e);
+											} else {
+												setInterest(1);
 											}
 										}}
 									/>
